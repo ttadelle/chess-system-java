@@ -11,7 +11,6 @@ public class Rook extends ChessPiece {
 	}
 	@Override
 	public String toString() {
-		
 		return "R";
 	}
 }
