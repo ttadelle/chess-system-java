@@ -22,11 +22,11 @@ public class Program {
 				
 				UI.printBoard(chessMatch.getPieces());
 				System.out.println();
-				System.out.print("Posi��o de origem: ");
+				System.out.print("Posicao de origem: ");
 				ChessPosition source = UI.readChessPosition(sc);
 				
 				System.out.println();
-				System.out.print("Posi��o de destino: ");
+				System.out.print("Posicao de destino: ");
 				ChessPosition target = UI.readChessPosition(sc);
 				
 				ChessPiece capturedPiece = chessMatch.perforChessMove(source,target);
