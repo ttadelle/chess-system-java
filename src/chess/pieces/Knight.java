@@ -5,15 +5,15 @@ import boardgame.Position;
 import chess.ChessPiece;
 import chess.Color;
 
-public class King extends ChessPiece {
+public class Knight extends ChessPiece {
 
-	public King(Board board, Color color) {
+	public Knight(Board board, Color color) {
 		super(board, color);
 	}
 	
 	private boolean canMove(Position position) {
 		ChessPiece p = (ChessPiece)getBoard().piece(position);
-		return p == null || p.getColor() != getColor();
+		return p != null && p.getColor() != getColor();
 	}
 
 	@Override
@@ -70,12 +70,12 @@ public class King extends ChessPiece {
 		mat[p.getRow()][p.getColumn()] = true;
 	    }
 	    
+	    
 		return mat;
 	}
 	
-	
 	@Override
 	public String toString() {
-		return "K";
+		return "N";
 	}
 }
