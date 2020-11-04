@@ -119,7 +119,7 @@ public class ChessMatch {
 	
 	public ChessPiece replacePromotedPiece(String type) {
 		if (promoted == null) {
-			throw new IllegalStateException("Nao ha peca para ser promovida.");
+			return promoted;
 		}
 		if (!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
 		throw new InvalidParameterException("Tipo de promocao invalida");
